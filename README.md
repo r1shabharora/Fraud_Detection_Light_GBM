@@ -27,35 +27,6 @@ A machine learning project designed to detect fraudulent transactions in financi
 - **Comprehensive Evaluation**: metrics including ROC-AUC, Precision, Recall, F1-Score, and Confusion Matrices.
 - **Visualization**: Auto-generates ROC curves and training time comparisons.
 
-## ⚙️ Installation & Usage
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/Fraud_Detection_Light_GBM.git
-    cd Fraud_Detection_Light_GBM
-    ```
-
-2.  **Set up a virtual environment**:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-    *Note: For macOS users, you may need to install `libomp` if you encounter LightGBM errors:*
-    ```bash
-    brew install libomp
-    ```
-
-4.  **Run the detection script**:
-    ```bash
-    python fraud_detection.py
-    ```
-
 ## 📈 Results & Analysis
 
 The model was trained on a highly imbalanced dataset where legitimate transactions vastly outnumber fraudulent ones.
