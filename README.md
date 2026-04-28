@@ -17,7 +17,7 @@ A machine learning project designed to detect fraudulent transactions in financi
 ┌──────────────────────────────────────────────────────────────────┐
 │                        DATA INGESTION                            │
 │                                                                  │
-│   HuggingFace Hub  ──►  datasets.load_dataset()  ──►  Arrow     │
+│   HuggingFace Hub  ──►  datasets.load_dataset()  ──►  Arrow      │
 │   (CiferAI/Cifer-Fraud-Detection-Dataset-AF)          format     │
 │                                ▼                                 │
 │                        df = ds.to_pandas()                       │
@@ -32,11 +32,11 @@ A machine learning project designed to detect fraudulent transactions in financi
 │     └─ nameOrig, nameDest, isFlaggedFraud                        │
 │                                                                  │
 │  2. Encode categorical features                                  │
-│     └─ LabelEncoder  ──►  `type` (CASH_IN, CASH_OUT, etc.)      │
+│     └─ LabelEncoder  ──►  `type` (CASH_IN, CASH_OUT, etc.)       │
 │                                                                  │
 │  3. Stratified Train / Test Split  (80% / 20%)                   │
 │     └─ Preserves fraud ratio across both splits                  │
-│        Train: ~16.8M rows  |  Test: ~4.2M rows                  │
+│        Train: ~16.8M rows  |  Test: ~4.2M rows                   │
 └────────────────────────────┬─────────────────────────────────────┘
                              │
                              ▼
